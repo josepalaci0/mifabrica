@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ValidateLogin } from "../content/ValidateLogin";
 export const FormLogin = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -12,12 +13,11 @@ export const FormLogin = () => {
     });
 
   const { email, password } = formData;
-  console.log(formData);
 
-  const login2 = (
-    <form id="__login">
+  const login = (
+    <form className="__login" onSubmit={(e) => e.preventDefault()}>
       <input
-        id="input-form"
+        className="input-form"
         value={email}
         onChange={(e) => updateFormData(e)}
         placeholder="Email address"
@@ -27,7 +27,7 @@ export const FormLogin = () => {
       />
       <br />
       <input
-        id="input-form"
+        className="input-form"
         value={password}
         onChange={(e) => updateFormData(e)}
         placeholder="Password"
@@ -36,12 +36,9 @@ export const FormLogin = () => {
         required
       />
       <br />
-
-      <button type="submit" id="input-submit">
-        Submit
-      </button>
     </form>
   );
 
-  return login2;
+  ValidateLogin(formData);
+  return login;
 };

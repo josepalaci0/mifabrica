@@ -93,7 +93,7 @@ export const Data = {
           },
         ],
       },
-      password: 1234,
+      password: "1234",
     },
   ],
 };

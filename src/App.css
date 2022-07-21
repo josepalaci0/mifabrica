@@ -9,7 +9,15 @@
   margin-right: 5%;
 }
 
-#__login {
+.App-home {
+  background-color: blue;
+  height: 98%;
+  width: 98%;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.__login {
   height: 32em;
 }
 
@@ -17,7 +25,7 @@ input {
   color: #d9d9d9;
 }
 
-#input-form {
+.input-form {
   margin: 2%;
   max-width: 300px;
   min-width: 200px;
@@ -29,7 +37,7 @@ input {
   transform: translateY(15em);
 }
 
-#input-submit {
+.input-submit {
   max-width: 300px;
   width: 95%;
   height: 30px;
