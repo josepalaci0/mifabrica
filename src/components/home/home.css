@@ -1,0 +1,107 @@
+.App-home {
+    background-color: blue;
+    height: 98%;
+    width: 98%;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.search {
+    background-color: aquamarine;
+    width: 99.8%;
+    height: 100px;
+    font-size: 6em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.fabricas {
+    background-color: aquamarine;
+    width: 24.7%;
+    height: 333px;
+    font-size: 6em;
+    transform: translateY(1.5px);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.chats {
+    background-color: aquamarine;
+    width: 24.7%;
+    height: 333px;
+    font-size: 6em;
+    transform: translateX(304.5%);
+    top: 101.5px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mensajes {
+    background-color: aquamarine;
+    width: 24.7%;
+    height: 187px;
+    font-size: 6em;
+    transform: translateX(304.5%);
+    top: 437px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    background-color: aquamarine;
+    width: 50%;
+    height: 187px;
+    font-size: 6em;
+    transform: translateX(50%);
+    top: 437px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.recomendado {
+    background-color: aquamarine;
+    width: 24.7%;
+    height: 187px;
+    font-size: 6em;
+    transform: translateY(3.7px);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+scroll-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    position: absolute;
+    right: 25%;
+    top: 16.3%;
+}
+
+scroll-container {
+    display: block;
+    width: 50%;
+    height: 100hv;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: antiquewhite;
+}
+
+scroll-page {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 6em;
+}

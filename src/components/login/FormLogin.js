@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { ValidateLogin } from "../content/ValidateLogin";
+import { ValidateLogin } from "../../content/login/ValidateLogin";
+
 export const FormLogin = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -15,7 +16,7 @@ export const FormLogin = () => {
   const { email, password } = formData;
 
   const login = (
-    <form className="__login" onSubmit={(e) => e.preventDefault()}>
+    <form className="__login">
       <input
         className="input-form"
         value={email}

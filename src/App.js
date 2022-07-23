@@ -1,13 +1,15 @@
-import "./App.css";
-import { FormLogin } from "./components/FormLogin";
+import "./components/login/login.css";
+import "./components/home/home.css";
+import { FormLogin } from "./components/login/FormLogin";
+import { Home } from "./components/home/Home";
 
 function App() {
   var login = localStorage.getItem("login");
   if (login === null) {
-    let app = <div className="App">{FormLogin()}</div>;
+    let app = <div className="App-login">{FormLogin()}</div>;
     return app;
   } else {
-    let app = <div className="App-home">Hola mundo</div>;
+    let app = <div className="App-home">{Home()}</div>;
     return app;
   }
 }

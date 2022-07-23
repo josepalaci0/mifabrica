@@ -1,0 +1,39 @@
+.App-login {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 40%;
+    height: 500px;
+    padding: 40px;
+    transform: translateY(30px);
+    margin-right: 5%;
+}
+
+.__login {
+    height: 32em;
+}
+
+input {
+    color: #d9d9d9;
+}
+
+.input-form {
+    margin: 2%;
+    max-width: 300px;
+    min-width: 200px;
+    height: 40px;
+    border-radius: 1.8em;
+    border: 0;
+    width: 95%;
+    background-color: #616161;
+    transform: translateY(15em);
+}
+
+.input-submit {
+    max-width: 300px;
+    width: 95%;
+    height: 30px;
+    border-radius: 1.8em;
+    border: 0;
+    transform: translateY(15.9em);
+}
