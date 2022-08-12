@@ -1,17 +1,26 @@
+/**Styles para todos los mudulo */
 import "./components/login/login.css";
 import "./components/home/home.css";
+
+/**Modulos o compenentes principales */
 import { FormLogin } from "./components/login/FormLogin";
 import { Home } from "./components/home/Home";
 
-function App() {
+/**Libreriar nativas de React */
+import { useState } from "react";
+
+/**informacion que va tomar desde inicio */
+import {Data} from "./data/data";
+
+/**Funciones principales */
+function App() {  
   var login = localStorage.getItem("login");
   if (login === null) {
-    let app = <div className="App-login">{FormLogin()}</div>;
+    let app = <div className="App-login">{FormLogin(Data)}</div>;
     return app;
   } else {
-    let app = <div className="App-home">{Home()}</div>;
+    let app = <div className="App-home">{Home(Data)}</div>;
     return app;
   }
 }
-
 export default App;

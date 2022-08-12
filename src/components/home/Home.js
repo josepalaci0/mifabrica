@@ -1,8 +1,14 @@
-export const Home = () => {
+/**Modulos o componentes que hacen parte del Home */
+import { Fabricas } from "./fabricas/Fabricas";
+import { Search } from "./search/Search"
+/**Styles home */
+import './search/search.css'
+/**Funcion Home principal */
+export const Home = (data) => {
   let home = (
     <div className="home">
-      <div className="search">2</div>
-      <div className="fabricas">3</div>
+      <div className="search">{Search(data)}</div>
+      <div className="fabricas">{Fabricas(data)}</div>
       <div className="chats">4</div>
       <div className="mensajes">5</div>
       <div className="info">6</div>

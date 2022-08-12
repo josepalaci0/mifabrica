@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ValidateLogin } from "../../content/login/ValidateLogin";
 
-export const FormLogin = () => {
+export const FormLogin = (data) => {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -40,6 +40,6 @@ export const FormLogin = () => {
     </form>
   );
 
-  ValidateLogin(formData);
+  ValidateLogin(formData,data);
   return login;
 };

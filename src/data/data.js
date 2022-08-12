@@ -1,3 +1,5 @@
+
+
 export const Data = {
   info: [
     {
@@ -5,85 +7,91 @@ export const Data = {
         informacion: [
           {
             documentoUsuario: {
-              fotoPerfil: "",
-              numeroDocumento: "",
-              primerNombre: "",
-              segundoNombre: "",
-              primerApellido: "",
-              segundoApellido: "",
-              fechaNacimiento: "",
-              fechaExpedicion: "",
+              fotoPerfil: "https://matrix-gruppe.de/uploads/Gregor_Frankenstein_matrix-gmbh-2-512x512.png",
+              numeroDocumento: "1110088449",
+              primerNombre: "Jose",
+              segundoNombre: "gregorio",
+              primerApellido: "palacio",
+              segundoApellido: "sanchez",
+              fechaNacimiento: "05-06-1993",
+              fechaExpedicion: "04-08-2011",
             },
           },
           {
             direccionUsuario: {
-              pais: "",
-              estado: "",
-              municipio: "",
-              direcion: "",
+              pais: "colombia",
+              estado: "tolima",
+              municipio: "anzoategui",
+              direcion: "finca el argel",
             },
           },
           {
             fabrica: [
               {
                 infoFabrica: {
-                  nombreFabrica: "",
-                  historiaFabrica: "",
-                  fechaIncioActividadFabrica: "",
-                  actividadEconomicaFabrica: "",
+                  nombreFabrica: "hilos de colombia",
+                  historiaFabrica: "hilos de colombia una empresa que crea hilos de para la fabricacion de prendas militares",
+                  fechaIncioActividadFabrica: "01-01-2000",
+                  actividadEconomicaFabrica: "fabricacion de materia prima para la fabricacion de prendas militares",
                 },
               },
               {
                 productoFabrica: {
-                  nombreProducto: "",
-                  estadoProducto: "",
-                  videoTiempoRealProducto: "",
-                  precioProdcuto: "",
+                  nombreProducto: "hilo de algodon",
+                  estadoProducto: {
+                    fases: {
+                      fase1: "iniciado",
+                      fase2: "en desarrollo",
+                      fase3: "terminado"
+                    }
+                  },
+                  videoTiempoRealProducto: "cargando video",
+                  precioProdcuto: "1000",
                   imagenesProducto: [
                     {
-                      urlImagen1: "",
-                      urlImagen2: "",
-                      urlImagen3: "",
-                      urlImagen4: "",
-                      urlImagen5: "",
+                      urlImagen1: "url imagen1",
+                      urlImagen2: "url imagen2",
+                      urlImagen3: "url imagen3",
+                      urlImagen4: "url imagen4",
+                      urlImagen5: "url imagen5",
                     },
                   ],
                 },
                 ventasProductosPublicados: {
-                  nombreProductoPublicado: "",
-                  fechaPublicado: "",
-                  descriccionPublicacion: "",
-                  cantidadProdcutoPublicado: "",
-                  precioProdcutoPublicado: "",
+                  nombreProductoPublicado: "hilo de algodon",
+                  fechaPublicado: "02-05-2011",
+                  descriccionPublicacion: "hilo de alta calidada ",
+                  cantidadProdcutoPublicado: "8",
+                  precioProdcutoPublicado: "1000",
                 },
               },
               {
                 estadoNaturaleza: {
                   climaElementos: {
-                    precipitacion: "",
-                    humedad: "",
-                    evaporacion: "",
-                    temperatura: "",
-                    insolacion: "",
-                    atmosfera: "",
-                    viento: "",
+                    precipitacion: "2%",
+                    humedad: "2%",
+                    evaporacion: "80%",
+                    temperatura: "24 grados",
+                    insolacion: "22",
+                    atmosfera: "-44",
+                    viento: "86",
                   },
                   climaFactores: {
                     geograficos: {
-                      latitud: "",
-                      situacion: "",
-                      relieve: { disposicion: "", altura: "", orientacion: "" },
-                      influenciaMar: "",
+                      latitud: "1200",
+                      situacion: "23",
+                      relieve: { disposicion: "45", altura: "23", orientacion: "78" },
+                      influenciaMar: "40%",
                     },
                     termicos: {
                       corriente: {
-                        velocidad: "",
-                        desplazamientoEstacional: "",
+                        velocidad: "55",
+                        desplazamientoEstacional: "0.33",
                       },
                       superficie: {
-                        centroAccion: "",
-                        masaAire: "",
-                        Frentes: "",
+                        centroAccion: "t-h",
+                        masaAire: "10%",
+                        Frentes: "25",
                       },
                     },
                   },
@@ -95,5 +103,6 @@ export const Data = {
       },
       password: "1234",
     },
+
   ],
 };
