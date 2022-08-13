@@ -1,6 +1,20 @@
-#configuracion img{
-width: 7em;
-left: -100%;
-margin-top: 11px;
+#configuracion{
+    margin-top: 1%;
+    transform: translateY(2em);
+}
+#config-perfil{
+width: 3rem;
 cursor: pointer;
+}
+#config-sitio{
+    width: 5.3rem;
+    left: 5rem;
+    margin-left: -11.5px;    
+    cursor: pointer; 
+}
+#config-logoff{
+    width: 3rem;
+    left: 5rem;
+    margin-left: -11.5px;    
+    cursor: pointer; 
 }
