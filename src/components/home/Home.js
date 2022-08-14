@@ -1,10 +1,13 @@
 /**Modulos o componentes que hacen parte del Home */
 import { Fabricas } from "./fabricas/Fabricas";
-import { Search } from "./search/Search"
+import { Search } from "./search/Search";
+
 /**Styles home */
 import './search/search.css'
 /**Funcion Home principal */
+
 export const Home = (data) => {
+
   let home = (
     <div className="home">
       <div className="search">{Search(data)}</div>
