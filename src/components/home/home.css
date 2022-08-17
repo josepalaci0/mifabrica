@@ -1,12 +1,12 @@
 .App-home {
-    background-color: blue;
+    
     height: 99%;
     width: 99%;
     position: relative;    
 }
 
 .search {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     width: 99.8%;
     height: 100px;  
     
@@ -14,7 +14,7 @@
 }
 
 .fabricas {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     width: 24.7%;
     height: 333px;
     font-size: 6em;
@@ -25,7 +25,7 @@
 }
 
 .chats {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     width: 24.7%;
     height: 333px;
     font-size: 6em;
@@ -39,7 +39,7 @@
 }
 
 .mensajes {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     width: 24.7%;
     height: 187px;
     font-size: 6em;
@@ -52,7 +52,7 @@
 }
 
 .info {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     width: 50%;
     height: 187px;
     font-size: 6em;
@@ -65,7 +65,7 @@
 }
 
 .recomendado {
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
     width: 24.7%;
     height: 187px;
     font-size: 6em;
@@ -82,7 +82,7 @@ scroll-container {
 
     position: absolute;
     right: 25%;
-    top: 16.3%;
+    top: 15%;
 }
 
 scroll-container {

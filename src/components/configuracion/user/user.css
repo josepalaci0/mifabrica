@@ -1,0 +1,15 @@
+#user {
+    background-color: blueviolet;
+    width: 20em;
+    height: 33em;
+    
+}
+#user img{
+    width: 11em;
+    height: 15em;
+    
+}
+#info-user{
+    font-size: 22px;
+    
+}

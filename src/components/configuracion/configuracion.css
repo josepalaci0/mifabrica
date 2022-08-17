@@ -1,0 +1,34 @@
+#configuracion{
+    margin-top: 1%;
+    transform: translateY(-37em);
+}
+#config-perfil{
+width: 3rem;
+cursor: pointer;
+}
+#config-sitio{
+    width: 5.3rem;
+    left: 5rem;
+    margin-left: -11.5px;    
+    cursor: pointer; 
+}
+#config-logoff{
+    width: 3rem;
+    left: 5rem;
+    margin-left: -11.5px;    
+    cursor: pointer; 
+}
+
+#configuracion-home{
+    transform: translateY(-37em);  
+    position: absolute;
+    background-color: gray;
+    color: aliceblue;
+    width: 20em;
+    min-width: 20em;
+    max-width: 20em;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+}

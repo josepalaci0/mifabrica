@@ -7,7 +7,7 @@ import { FormLogin } from "./components/login/FormLogin";
 import { Home } from "./components/home/Home";
 
 /**Libreriar nativas de React */
-import { useState } from "react";
+
 
 /**informacion que va tomar desde inicio */
 import {Data} from "./data/data";
@@ -19,7 +19,8 @@ function App() {
     let app = <div className="App-login">{FormLogin(Data)}</div>;
     return app;
   } else {
-    let app = <div className="App-home">{Home(Data)}</div>;
+    let app = <div className="App-home">{Home(Data)}
+    </div>;
     return app;
   }
 }
