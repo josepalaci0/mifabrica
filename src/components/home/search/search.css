@@ -1,0 +1,17 @@
+#searchs{
+    transform: translateY(2.5rem);
+    width: 100%;
+    position: absolute;
+}
+#searchs input{
+    width: 52%;
+    
+    height: 2.5em;
+    background-color: rgb(196, 234, 252);
+    transform: translateX(11rem);
+    color: black;
+    font-size: 18px;
+    border: 0;
+    border: 5px;
+    
+}

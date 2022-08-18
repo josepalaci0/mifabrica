@@ -19,8 +19,7 @@ function App() {
     let app = <div className="App-login">{FormLogin(Data)}</div>;
     return app;
   } else {
-    let app = <div className="App-home">{Home(Data)}
-    </div>;
+    let app = <div className="App-home">{Home(Data)}</div>;
     return app;
   }
 }

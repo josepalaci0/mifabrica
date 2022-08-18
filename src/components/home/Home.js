@@ -20,6 +20,7 @@ export const Home = (data) => {
       return Configuracion(data)
     }
   }
+  
 
   let home = (
     <div className="home">

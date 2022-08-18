@@ -1,6 +1,7 @@
 #configuracion{
     margin-top: 1%;
     transform: translateY(-37em);
+    width: 11em;
 }
 #config-perfil{
 width: 3rem;
@@ -24,11 +25,9 @@ cursor: pointer;
     position: absolute;
     background-color: gray;
     color: aliceblue;
-    width: 20em;
-    min-width: 20em;
-    max-width: 20em;
-    height: 100%;
+    width: 20em;    
+    height: 32.4em;
     align-items: center;
     text-align: center;
-    padding: 1%;
+    padding: 0.5%;
 }
