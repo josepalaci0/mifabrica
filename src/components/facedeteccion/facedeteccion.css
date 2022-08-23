@@ -1,4 +1,7 @@
-#facedeteccion{
-    position: absolute;
-    background-color: black;
+.styles-button-face{
+    transform: translateY(25em);
+}
+.styles-face{
+  transform: translateY(-10em); 
+  
 }

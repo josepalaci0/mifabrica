@@ -1,17 +1,15 @@
-import { useState } from "react";
+
 import {ValidateInfo} from '../../../content/ValidateInfo'
 import './search.css'
-export const Search = (data) => {     
-    const [searchs, setSearchs] = useState("")    
+export const Search = (data) => {
         
     const search = (<div id="searchs">
         <input
             name="searchs"
-            type="text"
-            value={searchs}
-            onChange={ e => setSearchs(e.target.value)} />
+            type="text"            
+            onChange={ e => ValidateInfo(data, e.target.value)} />
     </div>)
-    ValidateInfo(data, searchs)
+    
     
     return search;
 }

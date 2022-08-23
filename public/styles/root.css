@@ -5,19 +5,7 @@ body {
 canvas {
     position: absolute;
 }
-.videologin{
-    transform: translateX(50em);
-    width: 250px;
-    height: 200px;
-    left: 300px;
-}
-#video{
-    transform: translateY(-35em);
-    width: 250px;
-    height: 200px;
-    left: 300px;
-    
-}
+
 
 body {
     /* Location of the image */

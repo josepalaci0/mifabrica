@@ -11,6 +11,19 @@
 
 .__login {
     height: 32em;
+    background-color: #7a3333;
+}
+#videologin{
+    
+    width: 250px;
+    height: 200px; 
+    transform: translateX(2.5em);
+    
+    
+}
+#video{    
+    width: 250px;
+    height: 200px;   
 }
 
 input {
@@ -26,7 +39,7 @@ input {
     border: 0;
     width: 95%;
     background-color: #616161;
-    transform: translateY(15em);
+    transform: translateY(7em);
 }
 
 .input-submit {

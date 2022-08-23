@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ValidateLogin } from "../../content/login/ValidateLogin";
+import Face from '../facedeteccion/face';
 
 export const FormLogin = (data) => {
   const [formData, setFormData] = useState({
@@ -15,8 +16,9 @@ export const FormLogin = (data) => {
 
   const { email, password } = formData;
 
-  const login = (
+  const login = (<>
     <form className="__login">
+      <div id="videologin"><Face/></div>
       <input
         className="input-form"
         value={email}
@@ -37,9 +39,10 @@ export const FormLogin = (data) => {
         required
       />
       <br />
-    </form>
+    </form></>
+
   );
 
-  ValidateLogin(formData,data);
+  ValidateLogin(formData, data);
   return login;
 };
