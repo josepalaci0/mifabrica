@@ -11,15 +11,18 @@ import { Home } from "./components/home/Home";
 
 /**informacion que va tomar desde inicio */
 import {Data} from "./data/data";
+import { useState } from "react";
+
 
 /**Funciones principales */
 function App() {  
+  const [data,setData]= useState(Data)
   var login = localStorage.getItem("login");
   if (login === null) {
-    let app = <div className="App-login">{FormLogin(Data)}</div>;
+    let app = <div className="App-login">{FormLogin(data)}</div>;
     return app;
   } else {
-    let app = <div className="App-home">{Home(Data)}</div>;
+    let app = <div className="App-home">{Home(data)}</div>;
     return app;
   }
 }

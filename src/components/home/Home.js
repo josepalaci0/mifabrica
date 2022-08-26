@@ -9,7 +9,7 @@ import {ValidateInfo} from '../../content/ValidateInfo';
 /**Styles home */
 import '../configuracion/configuracion.css';
 import './search/search.css'
-import { useState } from "react";
+import {  useState } from "react";
 
 /**Funcion Home principal */
 export const Home = (data) => {
@@ -25,7 +25,7 @@ export const Home = (data) => {
     }
   }
   
- 
+  
   
 
   let home = (
@@ -43,8 +43,8 @@ export const Home = (data) => {
       <div className="recomendado">7</div>
       <scroll-container>
         <scroll-page id="page-1">1</scroll-page>
-        <scroll-page id="page-2">2</scroll-page>
-        <scroll-page id="page-3">3</scroll-page>
+        <scroll-page id="page-1">1</scroll-page>
+        <scroll-page id="page-1">1</scroll-page>
       </scroll-container>
       <div id="configuracion">
         <img onClick={() => setEstadoconfiguracion(!estadoconfiguracion)} alt="config-perfil" id="config-perfil" src="https://cdn-icons-png.flaticon.com/512/17/17004.png" />
@@ -59,5 +59,7 @@ export const Home = (data) => {
 
     </div>
   );
+ 
+ 
   return home;
 };

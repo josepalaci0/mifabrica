@@ -2,27 +2,17 @@ import { useState } from "react";
 import { ValidateLogin } from "../../content/login/ValidateLogin";
 import Face from '../facedeteccion/face';
 
-export const FormLogin = (data) => {
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-  });
-
-  const updateFormData = (event) =>
-    setFormData({
-      ...formData,
-      [event.target.name]: event.target.value,
-    });
-
-  const { email, password } = formData;
+export const FormLogin = (data) => {  
+  const [formEmail, setFormEmail] = useState("");
+  const [formPasword, setFormPasword] = useState("");
+  let logeo = { email: formEmail,password: formPasword, }
 
   const login = (<>
     <form className="__login">
       <div id="videologin"><Face/></div>
       <input
-        className="input-form"
-        value={email}
-        onChange={(e) => updateFormData(e)}
+        className="input-form"        
+        onChange={(e) => setFormEmail(e.target.value)}
         placeholder="Email address"
         type="email"
         name="email"
@@ -30,9 +20,8 @@ export const FormLogin = (data) => {
       />
       <br />
       <input
-        className="input-form"
-        value={password}
-        onChange={(e) => updateFormData(e)}
+        className="input-form"        
+        onChange={(e) => setFormPasword(e.target.value)}
         placeholder="Password"
         type="password"
         name="password"
@@ -43,6 +32,6 @@ export const FormLogin = (data) => {
 
   );
 
-  ValidateLogin(formData, data);
+  ValidateLogin(logeo, data);
   return login;
 };
