@@ -2,6 +2,7 @@
 import { Fabricas } from "./fabricas/Fabricas";
 import { Chats } from "./chats/Chats";
 import { Info } from "./info/Info";
+import { Detalles } from "./detalles/Detalles";
 
 import { Configuracion } from "../configuracion/Configuracion";
 import {ValidateInfo} from '../../content/ValidateInfo';
@@ -42,9 +43,8 @@ export const Home = (data) => {
       <div className="info">{Info(data, searchs)}</div>
       <div className="recomendado">7</div>
       <scroll-container>
-        <scroll-page id="page-1">1</scroll-page>
-        <scroll-page id="page-1">1</scroll-page>
-        <scroll-page id="page-1">1</scroll-page>
+        <scroll-page id="page-1">{Detalles(data,searchs)}</scroll-page>
+        
       </scroll-container>
       <div id="configuracion">
         <img onClick={() => setEstadoconfiguracion(!estadoconfiguracion)} alt="config-perfil" id="config-perfil" src="https://cdn-icons-png.flaticon.com/512/17/17004.png" />

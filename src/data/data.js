@@ -33,6 +33,7 @@ export const Data = {
                   historiaFabrica: "hilos de colombia una empresa que crea hilos de para la fabricacion de prendas militares",
                   fechaIncioActividadFabrica: "01-01-2000",
                   actividadEconomicaFabrica: "fabricacion de materia prima para la fabricacion de prendas militares",
+                  logoFabrica:"http://kaltex.com/wp-content/uploads/2017/07/Kaltex_Tepeji-8.jpg"
                 },
               },
               {
