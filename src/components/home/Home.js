@@ -21,11 +21,12 @@ export const Home = (data) => {
     }
   }
   
+  console.log('gggg',Search(data))
 
   let home = (
     <div className="home">
 
-      <div className="search">{Search(data)}</div>
+      <div className="search">{Search(data).search}</div>
       <div className="fabricas">{ }</div>
       <div className="chats">4</div>
       <div className="mensajes">5</div>
