@@ -1,10 +1,14 @@
 /**Modulos o componentes que hacen parte del Home */
-//import { Fabricas } from "./fabricas/Fabricas";
-import { Search } from "./search/Search";
+import { Fabricas } from "./fabricas/Fabricas";
+import { Chats } from "./chats/Chats";
+import { Info } from "./info/Info";
+
 import { Configuracion } from "../configuracion/Configuracion";
+import {ValidateInfo} from '../../content/ValidateInfo';
 
 /**Styles home */
 import '../configuracion/configuracion.css';
+import './search/search.css'
 import { useState } from "react";
 
 /**Funcion Home principal */
@@ -12,7 +16,7 @@ export const Home = (data) => {
 
 
   const [estadoconfiguracion, setEstadoconfiguracion] = useState(false)
-
+  const [searchs, setSearchs] = useState("");
   let ValidateConfiguracion = (data) => {
 
     if (estadoconfiguracion === true) {
@@ -21,16 +25,21 @@ export const Home = (data) => {
     }
   }
   
-  console.log('gggg',Search(data))
+ 
+  
 
   let home = (
     <div className="home">
 
-      <div className="search">{Search(data).search}</div>
-      <div className="fabricas">{ }</div>
-      <div className="chats">4</div>
+      <div className="search">{
+        <div id="searchs">
+        <input name="searchs" type="text" onChange={ e => setSearchs(ValidateInfo(data, e.target.value))} />
+        </div>
+        }</div>
+      <div className="fabricas">{ Fabricas(data,searchs)}</div>
+      <div className="chats">{Chats(data, searchs)}</div>
       <div className="mensajes">5</div>
-      <div className="info">6</div>
+      <div className="info">{Info(data, searchs)}</div>
       <div className="recomendado">7</div>
       <scroll-container>
         <scroll-page id="page-1">1</scroll-page>

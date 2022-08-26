@@ -7,10 +7,10 @@ export const ValidateInfo = (data, searchs) => {
             for (let n = 0; n <= data.info.length; n++) {
                 let result = items[n].usuario.informacion[n].documentoUsuario.primerNombre
                 if (result === searchs) {
-                    console.log('busqueda exitosa')
-                    return result
+                    
+                    return result =['Busqueda Exitosa: ', result ]
                 } else {
-                   return result = ['No se encontro', searchs]
+                   return result = ['No se encontro: ', searchs]
                 }
             }
         }
