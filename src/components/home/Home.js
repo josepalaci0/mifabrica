@@ -31,7 +31,6 @@ export const Home = (data) => {
 
   let home = (
     <div className="home">
-
       <div className="search">{
         <div id="searchs">
         <input name="searchs" type="text" onChange={ e => setSearchs(ValidateInfo(data, e.target.value))} />
